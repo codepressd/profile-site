@@ -37,6 +37,7 @@
     <section id="projects" class="projects">
         <h1>-------- <span class="space">My Projects</span> --------</h1>
         <div class="col-4">
+        <span onclick="openNav('first-project')">
             <div class="project-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                     <line class="top" x1="0" y1="0" x2="900" y2="0" />
@@ -45,11 +46,28 @@
                     <line class="right" x1="300" y1="0" x2="300" y2="1380" />
                 </svg>
                 <h3>Eddie Out</h3>
-                <span>API's used:</span>
-                <span>Google Maps & Charts, USGS</span>
+                <span>JS, JQuery, Node.js</span>
+                <span>API's: Google Maps & Charts, USGS</span>
             </div>
+            </span>
+        </div>
+        <div class="col-4 ">
+        <span onclick="openNav('second-project')">
+            <div class="project-contain">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <line class="top" x1="0" y1="0" x2="900" y2="0" />
+                    <line class="left" x1="0" y1="460" x2="0" y2="-920" />
+                    <line class="bottom" x1="300" y1="460" x2="-600" y2="460" />
+                    <line class="right" x1="300" y1="0" x2="300" y2="1380" />
+                </svg> 
+                <h3>Soccerly</h3>
+                <span>JS, JSX, React, Redux</span>
+                <span>Keep Tabs on European Leagues</span>
+            </div>
+            </span>
         </div>
         <div class="col-4">
+        <span onclick="openNav('third-project')">
             <div class="project-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                     <line class="top" x1="0" y1="0" x2="900" y2="0" />
@@ -57,24 +75,88 @@
                     <line class="bottom" x1="300" y1="460" x2="-600" y2="460" />
                     <line class="right" x1="300" y1="0" x2="300" y2="1380" />
                 </svg>
-                <h3>Farmly</h3>
-                <span>JS, Jquery, React, Node.js</span>
-                <span>Connecting farmers and Restaurants</span>
+                <h3>Salut.io</h3>
+                <span>React, Redux,  Mongodb, Node.js</span>
+                <span>Universal Ordering Platform</span>
+            </div>
+            </span>
+        </div>
+    </section>
+    <section>
+    
+        <div id="first-project" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('first-project')">&times;</a>
+            <div class='overlay-content'>
+            <h3>Eddie Out</h3>
+             <img class="overlay-image" src="img/eddie-out.jpg">
+            <div class="project-description">
+                    <div class="col-6">
+                        <h4>Technology used: Full Stack</h4>
+                        <ul >
+                            <li>Javascript</li>
+                            <li>JQuery</li>
+                            <li>Mongodb</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class ="col-6">
+                    <h4>Project Description:</h4>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="project-contain">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                    <line class="top" x1="0" y1="0" x2="900" y2="0" />
-                    <line class="left" x1="0" y1="460" x2="0" y2="-920" />
-                    <line class="bottom" x1="300" y1="460" x2="-600" y2="460" />
-                    <line class="right" x1="300" y1="0" x2="300" y2="1380" />
-                </svg>
-                <h3>Farmly</h3>
-                <span>JS, Jquery, React, Node.js</span>
-                <span>Connecting farmers and Restaurants</span>
+
+        <div id="second-project" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('second-project')">&times;</a>
+            <div class='overlay-content'>
+            <h3>Soccerly</h3>
+             <img class="overlay-image" src="img/soccerly.jpg">
+            <div class="project-description">
+                    <div class="col-6">
+                        <h4>Technology used: Full Stack</h4>
+                        <ul >
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>JSX</li>
+                        </ul>
+                    </div>
+                    <div class ="col-6">
+                    <h4>Project Description:</h4>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div id="third-project" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('third-project')">&times;</a>
+            <div class='overlay-content'>
+                <h3>Salut.io</h3>
+                <img class="overlay-image" src="img/soccerly.jpg">
+                <div class="project-description">
+                    <div class="col-6">
+                        <h4>Technology used: Full Stack</h4>
+                        <ul >
+                            <li>Mongodb</li>
+                            <li>Express</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class ="col-6">
+                    <h4>Project Description:</h4>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    <p>I wanted to create some kind of filler text to see what this is going to look like when I actullay finish my porfolio site and start going for job. There is going to be some weird svg complications for making this thing work on all screen sizes but hopefullly I will figure that out. I always do</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
     </section>
     <section id="contact" class="contact">
         <h1>-------- <span class="space">Contact Me</span> --------</h1>
