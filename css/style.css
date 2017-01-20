@@ -255,14 +255,6 @@ h4 {
     display: inline-block;
 }
 
-@media (max-width:1300px){
-    .col-4{
-        width: 50%;
-        float: left;
-        padding: 5%;
-        display: inline-block;
-    }
-}
 .col-6{
     width: 50%;
     float: left;
@@ -282,6 +274,7 @@ h4 {
     -webkit-transition: background 0.4s 0.5s;
     transition: background 0.4s 0.5s;
 }
+
 .project-contain:hover {
     background: rgba(255, 255, 255, 0);
     -webkit-transition-delay: 0s;
@@ -365,6 +358,7 @@ section:after {
     content: "";
 }
 
+
 /*Portfolio expand*/
 /* The Overlay (background) */
 .overlay {
@@ -412,8 +406,8 @@ section:after {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 50px;
+    right: 15px;
     font-size: 60px;
 }
 
@@ -422,7 +416,7 @@ section:after {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
         font-size: 40px;
-        top: 15px;
+        top: 35px;
         right: 35px;
     }
 }
@@ -454,6 +448,7 @@ section:after {
 .project-description li{
     font-size: 45px;
 }
+
 /*Contact Area*/
 .contact {
     background-color: #eaeaea;
@@ -485,3 +480,67 @@ section:after {
 i:hover {
     color: #58bf28;
 }
+/* Media Queries */
+
+@media screen and (max-width:1300px){
+    .col-4{
+        width: 50%;
+        float: left;
+        padding: 5%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .col-4{
+        text-align: center;
+        padding: 0 0 15px 20px;
+    }
+
+    .projects{
+        width: 100%;
+    }
+
+    .col-6{
+        width: 100%;
+        text-align: center;
+    }
+
+    .overlay-image{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 668px){
+    .col-4{
+        padding: 0 0 15px 0; 
+    }
+}
+
+@media screen and (max-width: 666px){
+
+     .col-4{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .top-nav .links li {
+        padding: 10px;
+    }
+
+    .top-nav .content {
+        height: 4.375rem;
+        width: 100%;
+    }
+
+    .logo-contain{
+        top: 3.295rem;
+    }
+}
+
