@@ -283,11 +283,11 @@ h4 {
 .projects > h1 {
     padding-bottom: 4.5rem;
 }
-.project-contain h3 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3.4rem;
-    line-height: 24rem;
-    margin: 0;
+
+.project-contain h4 {
+    font-size: 1.4rem;
+    padding: 0 0 120px 0;
+    color: #000;
     font-weight: 400;
     width: 100%;
 }
@@ -360,9 +360,8 @@ section:after {
 
 
 /*Portfolio expand*/
-/* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+     
     height: 100%;
     width: 0;
     position: fixed;
@@ -372,6 +371,24 @@ section:after {
     background-color: rgb(44,62,80);  
     overflow-x: hidden;
     transition: 0.5s; 
+}
+
+/*project specific  */
+
+#first-project{
+    background-color: rgb(171,151,123);
+}
+
+#second-project{
+    background-color: rgb(59,113,167);
+}
+
+#third-project{
+    background-color: rgb(89,126,155);
+}
+
+.github{
+     font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Position the content inside the overlay */
@@ -393,9 +410,10 @@ section:after {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    color: #414462;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -411,34 +429,30 @@ section:after {
     font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 35px;
-        right: 35px;
-    }
-}
-
 .overlay-image{
     width: 50%;
     display: block;
     margin: 10px auto;
 }
 
-.overlay h3{
-    font-family: 'Pacifico', cursive;
-    font-size: 3.4rem;
-    line-height: 7rem;
-    margin: 0;
-    text-align: center;
-    font-weight: 400;
-}
-
 .project-description {
     padding-top: 20px;
 }
+
+.project-description i{
+    color: #415462;
+    font-size: 40px;
+}
+
+.project-description i:hover{
+    color: #fff;
+}
+
+.project-description a{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .project-description p{
     font-size: 20px;
 }
@@ -447,6 +461,28 @@ section:after {
 }
 .project-description li{
     font-size: 45px;
+}
+
+/* Project Customization */
+
+.eddieout {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.4rem;
+    font-weight: 400;
+    width: 100%;
+}
+.salut {
+    font-family:  'Delius', cursive;
+    font-size: 4rem;
+    padding: 10px 0;
+    
+}
+.soccerly {
+    font-family: 'Slabo 27px', serif;
+    font-size: 4rem;
+    padding: 10px 0;
+   
+
 }
 
 /*Contact Area*/
@@ -477,7 +513,7 @@ section:after {
 }
 
 /*Social Icons*/
-i:hover {
+.social i:hover {
     color: #58bf28;
 }
 /* Media Queries */
@@ -529,7 +565,7 @@ i:hover {
 
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 640px){
     .top-nav .links li {
         padding: 10px;
     }
@@ -541,6 +577,14 @@ i:hover {
 
     .logo-contain{
         top: 3.295rem;
+    }
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 35px;
+        right: 35px;
     }
 }
 
